@@ -34,8 +34,18 @@ boxes.forEach((box) => {
         }
         box.disabled = true;
         checkWinner();
+        if (count === 9 && !isWinner) {
+      gameDraw();
+    }
     });
 });
+
+const gameDraw = () => {
+  msg.innerText = `Game was a Draw.`;
+  msgContainer.classList.remove("hide");
+  disableBoxes();
+};
+
 const disableBoxes = () => {
     for (let box of boxes){
         box.disabled = true;
