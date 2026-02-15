@@ -62,4 +62,12 @@ body {
 .hide{
     display:none;
 }
+.O {
+    color: #e63946;  
+}
+
+.X {
+    color: #1d3557;   
+}
+
 

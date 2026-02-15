@@ -26,26 +26,18 @@ boxes.forEach((box) => {
         console.log("box was clicked");
         if (turn0){
             box.innerText = "O";
+            box.classList.add("O");
             turn0 = false;
         } else{
             box.innerText = "X";
+            box.classList.add("X"); 
             turn0 = true;
 
         }
         box.disabled = true;
         checkWinner();
-        if (count === 9 && !isWinner) {
-      gameDraw();
-    }
     });
 });
-
-const gameDraw = () => {
-  msg.innerText = `Game was a Draw.`;
-  msgContainer.classList.remove("hide");
-  disableBoxes();
-};
-
 const disableBoxes = () => {
     for (let box of boxes){
         box.disabled = true;
