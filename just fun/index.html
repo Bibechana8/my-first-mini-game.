@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <header class="header">
+          <div>
+            <p class="eyebrow">Just Fun</p>
+            <h1>Tic Tac Toe</h1>
+            <p class="subtitle">Playful board. No pressure.</p>
+          </div>
+          <div class="status" id="status">X starts</div>
+        </header>
+
+        <div class="board" id="board" aria-label="Tic Tac Toe board" role="grid">
+          <button class="cell" data-index="0" role="gridcell" aria-label="Cell 1"></button>
+          <button class="cell" data-index="1" role="gridcell" aria-label="Cell 2"></button>
+          <button class="cell" data-index="2" role="gridcell" aria-label="Cell 3"></button>
+          <button class="cell" data-index="3" role="gridcell" aria-label="Cell 4"></button>
+          <button class="cell" data-index="4" role="gridcell" aria-label="Cell 5"></button>
+          <button class="cell" data-index="5" role="gridcell" aria-label="Cell 6"></button>
+          <button class="cell" data-index="6" role="gridcell" aria-label="Cell 7"></button>
+          <button class="cell" data-index="7" role="gridcell" aria-label="Cell 8"></button>
+          <button class="cell" data-index="8" role="gridcell" aria-label="Cell 9"></button>
+        </div>
+
+        <footer class="footer">
+          <button class="ghost" id="reset">Reset</button>
+          <div class="score" aria-live="polite">
+            <span>Score</span>
+            <div class="score-values">
+              <span>X: <strong id="score-x">0</strong></span>
+              <span>O: <strong id="score-o">0</strong></span>
+              <span>Ties: <strong id="score-ties">0</strong></span>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
