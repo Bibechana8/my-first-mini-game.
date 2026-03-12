@@ -6,6 +6,14 @@
     text-align: center;
     background-color: lightcyan;
 } */
- .content{
+ /* .content{
     
- }
+ } */
+.dark{
+    background-color: black;
+    color: white;
+}
+.white{
+    background-color: white;
+    color: black;
+}
